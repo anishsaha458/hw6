@@ -1,0 +1,31 @@
+I want to create a SQlite database to track recipe collection. Here are the columns that I'm thinking of: name, category, ingredients, instructions, prep time, rating, notes
+
+Show me how to write a python function that asks the user for name, category, ingredients, instructions, prep time, rating, notes and inserts a new row into the table using sqlite3. Use parameterized queries to avoid SQL injection.
+
+I'm building a recipe collection app in Python using SQLite. I already have a recipes table with these columns: id, name, category, ingredients, instructions, prep_time, rating, and notes.
+Write a Python function called read_recipes_filtered that retrieves records from the table and displays them. It should support:
+Showing all recipes
+Filtering by category
+Filtering by minimum rating 
+Sorting by a chosen column 
+The function should take sort_by, category, and min_rating as optional parameters. Use parameterized queries (with ? placeholders) to prevent SQL injection. Also write a second function read_recipe_by_id that fetches a single recipe by its ID and returns None if not found. Display results in a clean, readable format in the terminal.
+
+I'm building a recipe collection app in Python using SQLite. I already have a recipes table with these columns: id, name, category, ingredients, instructions, prep_time, rating, and notes.
+Write two Python functions:
+1. update_recipe(recipe_id, **fields)
+
+Takes a recipe ID and any number of keyword arguments representing fields to update
+Only updates the fields that are passed in — leave all others unchanged
+If no valid fields are provided, return 0 and do nothing
+Return the number of rows changed
+Use parameterized queries with ? placeholders
+
+2. delete_recipe(recipe_id)
+
+Takes a recipe ID and permanently removes that recipe from the database
+Return the number of rows deleted
+
+Both functions should handle the case where the entered ID doesn't exist.
+
+
+how to run app
